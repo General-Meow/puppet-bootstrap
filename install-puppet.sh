@@ -23,6 +23,10 @@ echo "complete! now reload the .profile file (source ~/.profile might work) or r
 echo "copying contents tp puppets config"
 echo 'cat puppet.conf >> /etc/puppetlabs/puppet/puppet.conf' | sudo -s
 
+echo "installing librarian puppet"
+sudo apt-get install make ruby ruby-dev
+sudo gem install librarian-puppet
+
 echo "initializing librarian puppet in /etc/puppetlabs/code/environments/production"
 cd /etc/puppetlabs/code/environments/production
 sudo rm -rf modules
