@@ -1,2 +1,2 @@
-# puppet-stuff
+# puppet-bootstrap
 install and bootstrap puppet in masterless mode
