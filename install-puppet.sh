@@ -2,7 +2,7 @@
 
 UBUNTU_VERSION=trusty
 DOWNLOAD_FILE=puppetlabs-release-pc1-$UBUNTU_VERSION.deb
-if [ ! -f $DOWNLOAD_FILE]; then
+if [ ! -f $DOWNLOAD_FILE ]; then
         echo getting the .deb file to enable the puppet repository on $UBUNTU_VERSION
         wget https://apt.puppetlabs.com/$DOWNLOAD_FILE -O $DOWNLOAD_FILE
 fi
