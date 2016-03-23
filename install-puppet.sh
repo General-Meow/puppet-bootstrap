@@ -29,6 +29,6 @@ sudo gem install librarian-puppet puppet
 
 echo "initializing librarian puppet in /etc/puppetlabs/code/environments/production"
 cd /etc/puppetlabs/code/environments/production
-sudo rm -rf modules
-sudo librarian-puppet init
+#sudo rm -rf modules
+#sudo librarian-puppet init
 
