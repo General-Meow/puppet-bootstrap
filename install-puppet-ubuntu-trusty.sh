@@ -14,7 +14,7 @@ echo updating the package manager
 sudo apt-get update
 
 echo installing puppet
-sudo apt-get install puppet-agent
+sudo apt-get install -y puppet-agent
 
 echo "adding the location of the puppet directory to PATH (This is done because the puppet-agent doesn't really run the interative puppet command)"
 echo "export PATH=$PATH:/opt/puppetlabs/bin" >> ~/.profile
@@ -24,7 +24,7 @@ echo "copying contents tp puppets config"
 echo 'cat puppet.conf >> /etc/puppetlabs/puppet/puppet.conf' | sudo -s
 
 echo "installing librarian puppet"
-sudo apt-get install make ruby ruby-dev
+sudo apt-get install -y make ruby ruby-dev
 sudo gem install librarian-puppet puppet
 
 echo "initializing librarian puppet in /etc/puppetlabs/code/environments/production"
