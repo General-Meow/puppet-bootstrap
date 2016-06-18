@@ -11,6 +11,6 @@ Requires: git
 Usage: 
 - git clone https://github.com/General-Meow/puppet-bootstrap.git bootstrap
 - cd bootstrap
-- chmod +x install-puppet-<VERSION>.sh
-- ./install-puppet-<VERSION>.sh
+- chmod +x install-puppet-\<VERSION>.sh
+- ./install-puppet-\<VERSION>.sh
 - puppet --version
