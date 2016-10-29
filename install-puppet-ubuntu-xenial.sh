@@ -27,8 +27,11 @@ echo "installing librarian puppet"
 sudo apt-get install -y make ruby ruby-dev
 sudo gem install librarian-puppet puppet
 
-echo "initializing librarian puppet in /etc/puppetlabs/code/environments/production"
-cd /etc/puppetlabs/code/environments/production
+#echo "initializing librarian puppet in /etc/puppetlabs/code/environments/production"
+#cd /etc/puppetlabs/code/environments/production
 #sudo rm -rf modules
 #sudo librarian-puppet init
 
+#since trying version 4.7.0 it seems as though puppet now installs the config dir in ~/.puppetlabs
+echo "initializing librarian puppet in ~/.puppetlabs/etc/code"
+cd ~/.puppetlabs/etc/code
